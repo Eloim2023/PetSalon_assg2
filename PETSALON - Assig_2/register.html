@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Salon</title>
+</head>
+<body>
+    <div class = "container">
+        <div class="mb-3">
+            <label class="form-label"> Name </label>
+            <input type="text" class = "form-control" id="txtName">
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Age </label>
+            <input type="number" class = "form-control" id="txtAge">
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Gender </label>
+            <input type="text" class = "form-control" id="txtGender">
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Service </label>
+            <select class="form-control" id="txtService">
+                <option value=""disabled selected> -- Select an option -- </option>
+                <option value="grooming"> Grooming </option>
+                <option value="nails"> Nails cut </option>
+                <option value="vaccine"> Vaccines </option>
+            </select>
+
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Type </label>
+            <select class="form-control" id="txtType">
+                <option value=""disabled selected> -- Select an option -- </option>
+                <option value="cat"> Cat </option>
+                <option value="dog"> Dog [go to breed] </option>
+                <option value="bird"> Bird </option>
+                <option value="other"> Other </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Type (if other)  </label>
+            <input type="text" class = "form-control" id="txtOther1">
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Dog's Breed </label>
+            <select class="form-control" id="txtBreed">
+                <option value=""disabled selected> -- Select an option -- </option>
+                <option value="notDog"> Not a Dog </option>
+                <option value="amerBulldog"> American Bulldog </option>
+                <option value="gerSheperd"> German Sheperd </option>
+                <option value="borCollie"> Border Collie </option>
+                <option value="other"> Other </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Breed (if other)  </label>
+            <input type="text" class = "form-control" id="txtOther2">
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Owner's Name  </label>
+            <input type="text" class = "form-control" id="txtOwner">
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Owner's Phone Number  </label>
+            <input type="text" class = "form-control" id="txtPhone">
+        </div>
+
+
+    </div>
+
+    <button class="btn btn-light" onclick="register();"> Register </button>
+
+    <footer>
+        <div id="information">
+        </div>
+    </footer>
+    
+    <script src="script/register.js"></script>
+    <script src="script/displayInfo.js"></script>
+    
+</body>
+</html>
